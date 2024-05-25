@@ -1,3 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}
+
+.manrope {
+	font-family: 'Manrope', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.container {
+	display: flex;
+	/* flex-direction: column; */
+}
+
+.title {
+	font-size: 3.75em;
+}
+
+.content {
+	font-size: 1.5em;
+}
+
+.author {
+	font-size: 1.85em;
+}
+
+.author img {
+	width: 20px;
+	height: 40px;
+	/* border-radius: 3em; */
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;

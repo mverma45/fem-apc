@@ -14,8 +14,7 @@
 }
 
 .container {
-	display: flex;
-	/* flex-direction: column; */
+	float: right;
 }
 
 .title {
@@ -30,11 +29,17 @@
 	font-size: 1.85em;
 }
 
-.author img {
-	width: 20px;
-	height: 40px;
-	/* border-radius: 3em; */
+/*
+.authorImg {
+	border-radius: 3em;
 }
+*/
+
+.date {
+	font-size: 1.25em;
+	color: hsl(212, 23%, 69%);
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;

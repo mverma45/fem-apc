@@ -1,21 +1,21 @@
-// const shareButton = document.querySelector('.shareButton');
-
-// document.querySelector('.shareButton').addEventListener('click', function () {
-// 	this.classList.toggle('active');
-// 	shareButton.classList.toggle('active');
-// });
-
-const shareIcon = document.getElementById('.shareIcon');
-const shareButton = (document.getElementById = '.shareButton');
+const shareIcon = document.getElementById('#shareIcon');
+const share = (document.getElementById = '#shareButton');
+const svg = document.getElementById('#svg');
 
 shareIcon.addEventListener('click', () => {
-	shareButton.classList.toggle('visible');
-	if (shareButton.classList.contains('visible')) {
-	}
+	btnCloseOpen();
 });
 
-// const closeBtn = document.getElementById('.buttonCloseOne');
-
-// closeBtn.addEventListener('click', () => {
-// 	shareButton.classList.toggle('active');
-// });
+function btnCloseOpen() {
+	if (share.classList.contains('visible')) {
+		share.classList.remove('visible');
+		share.classList.add('visibleC');
+		shareIcon.classList.remove('shareA');
+		svg.classList.remove('active');
+	} else {
+		share.classList.add('visible');
+		share.classList.remove('visibleC');
+		shareIcon.classList.add('shareA');
+		svg.classList.add('active');
+	}
+}

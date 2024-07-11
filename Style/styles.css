@@ -1,56 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
-	font-size: 13px;
 }
 
-.manrope {
-	font-family: 'Manrope', sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 500;
-	font-style: normal;
-}
-
-body {
+.container {
+	position: relative;
 	display: flex;
-	background: hsl(210, 46%, 95%);
+	width: 70%;
+	max-width: 70em;
+	height: 20em;
+	margin: 15em;
+	border-radius: 2em;
+	background-color: #ecf2ecbf;
+	overflow: visible;
 }
 
-.title {
+.description {
+	padding: 3em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.right h4 {
+	margin-bottom: -0.7em;
+}
+
+.share {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15rem;
+	max-width: 100%;
+}
+
+.profile {
+	width: 4em;
+	border-radius: 50%;
+}
+
+.bottom {
+	display: flex;
+}
+
+.right {
+	margin-left: 0.5em;
+	padding-top: 0.5em;
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 1em;
-	font-size: 2.75em;
+	border-radius: 50%;
+	background-color: #6e809846;
+}
+.icon img {
+	z-index: 10;
 }
 
-.content {
-	padding: 1.5em;
-	font-size: 1.55em;
+.icon:hover {
+	background-color: #6e8098;
 }
 
-.author {
-	font-size: 1.85em;
-	margin-top: 4em;
+.icon:hover path {
+	fill: rgb(249, 249, 253);
 }
 
-.authorContainer {
+.pop {
+	background-color: #48556a;
 	display: flex;
-}
-
-.authorContainer img {
-	padding: 1.5em;
-	border-radius: 8em;
-}
-
-.date {
-	font-size: 1.25em;
-	color: hsl(212, 23%, 69%);
-}
-
-.shareButton {
-	margin-top: -8.75em;
-	margin-left: 40em;
-	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	border-radius: 0.2em;
+	gap: 1em;
+	top: 48%;
+	left: 85%;
+	width: 20%;
+	max-width: 30%;
+	padding: 0.5em;
+	display: none;
+	color: #ffff;
 }
 
 .attribution {
@@ -59,4 +91,27 @@ body {
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		width: 90%;
+		height: 100%;
+		max-height: 100%;
+		margin: 2em;
+		overflow: hidden;
+	}
+
+	.bottom {
+		display: none;
+	}
+
+	.pop {
+		display: flex;
+		left: 0;
+		width: 100%;
+		max-width: 100%;
+		top: 93%;
+	}
 }

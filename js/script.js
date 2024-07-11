@@ -1,21 +1,22 @@
-const shareIcon = document.getElementById('#shareIcon');
-const share = (document.getElementById = '#shareButton');
-const svg = document.getElementById('#svg');
+const popUp = document.getElementById('popUp');
+const icon = document.querySelector('.icon');
 
-shareIcon.addEventListener('click', () => {
-	btnCloseOpen();
+icon.addEventListener('mouseenter', function () {
+	popUp.style.display = 'flex';
 });
 
-function btnCloseOpen() {
-	if (share.classList.contains('visible')) {
-		share.classList.remove('visible');
-		share.classList.add('visibleC');
-		shareIcon.classList.remove('shareA');
-		svg.classList.remove('active');
-	} else {
-		share.classList.add('visible');
-		share.classList.remove('visibleC');
-		shareIcon.classList.add('shareA');
-		svg.classList.add('active');
-	}
-}
+icon.addEventListener('mouseleave', function () {
+	setTimeout(() => {
+		if (!popUp.matches(':hover')) {
+			popUp.style.display = 'none';
+		}
+	}, 100);
+});
+
+popUp.addEventListener('mouseenter', function () {
+	popUp.style.display = 'flex';
+});
+
+popUp.addEventListener('mouseleave', function () {
+	popUp.style.display = 'none';
+});

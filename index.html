@@ -5,79 +5,86 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png" />
-
-		<title>Frontend Mentor | Article preview component</title>
-		<!-- CSS File -->
 		<link
 			rel="stylesheet"
 			href="./Style/styles.css" />
-		<!-- JS File -->
-		<script src="./js/script.js"></script>
+
+		<title>Frontend Mentor | Article preview component</title>
 	</head>
 	<body>
-		<img
-			src="./images/drawers.jpg"
-			alt="" />
 		<div class="container">
-			<div class="title">
-				Shift the overall look and feel by adding these wonderful touches to
-				furniture in your home
+			<img
+				src="images/drawers.jpg"
+				alt="" />
+
+			<div class="description">
+				<h3>
+					Shift the overall look and feel by adding these wonderful touches to
+					furniture in your home
+				</h3>
+
+				<p class="paragraph">
+					Ever been in a room and felt like something was missing? Perhaps it
+					felt slightly bare and uninviting. I’ve got some simple tips to help
+					you make any room feel complete.
+				</p>
+
+				<div class="bottom">
+					<img
+						src="images/avatar-michelle.jpg"
+						alt=""
+						class="profile" />
+
+					<div class="right">
+						<h4>Michelle Appleton</h4>
+
+						<div class="share">
+							<p class="date">28 Jun 2020</p>
+							<div class="icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="15"
+									height="13">
+									<path
+										fill="#6E8098"
+										d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="content">
-				Ever been in a room and felt like something was missing? Perhaps it felt
-				slightly bare and uninviting. I’ve got some simple tips to help you make
-				any room feel complete.
-			</div>
-			<div class="authorContainer">
+
+			<div
+				class="pop"
+				id="popUp">
+				<p>SHARE</p>
 				<img
-					src="./images/avatar-michelle.jpg"
+					src="images/icon-facebook.svg"
 					alt="" />
-				<div class="authorDate">
-					<p class="author">Michelle Appleton</p>
-					<p class="date">28 Jun 2020</p>
-				</div>
-			</div>
-
-			<div class="shareButton">
-				Share
-				<div class="share">
-					<img
-						src="./images/icon-share.svg"
-						alt="" />
-				</div>
-
-				<div class="shareSvg">
-					<img
-						src="/images/icon-facebook.svg"
-						alt="" />
-					<img
-						src="/images/icon-twitter.svg"
-						alt="" />
-					<img
-						src="/images/icon-pinterest.svg"
-						alt="" />
-				</div>
-				<button class="buttonCloseOne">
-					<img
-						src="/images/icon-share.svg"
-						alt="CloseBtn" />
-				</button>
-				<div class="triangle"></div>
+				<img
+					src="images/icon-twitter.svg"
+					alt="" />
+				<img
+					src="images/icon-pinterest.svg"
+					alt="" />
 			</div>
 		</div>
+
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a
+				href="https://github.com/mverma45/fem-apc"
+				target="_blank"
+				>Manny Verma</a
+			>.
+		</div>
+
+		<script src="./js/script.js"></script>
 	</body>
-	<div class="attribution">
-		Challenge by
-		<a
-			href="https://www.frontendmentor.io?ref=challenge"
-			target="_blank"
-			>Frontend Mentor</a
-		>. Coded by <a href="https://github.com/mverma45">Manny Verma</a>.
-	</div>
 </html>
